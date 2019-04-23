@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <title>Kalkulator wody</title>
+
+  </head>
+  <body>
+      <div class="container p-4">
+          <h1 class="text-center"> Kalkulator twardości wody
+        </h1>
+      <div class="conteiner mb-5">
+
+          <form>
+              <div class="row">
+                  <div class="col-6">
+              <div  class="form-group">
+              <h3>Wybierz jednostkę:</h3>
+          <select id="unit">
+              <option value="3">mg CaCO3</option>
+              <option value="1">Mval</option>
+              <option value="2">Mmol</option>
+              
+              <option value="4">Jednostka niemiecka (°dH) (°n)</option>
+              <option value="5">Jednostka angielska (°e) (°Clarka)</option>
+              <option value="6">Jednostka francuska (°f)</option>
+              
+              
+              
+              </select>
+              </div>
+                      </div>
+                  <div class="col-6">
+              <div class="form-group">
+              <h3>Podaj wartość:</h3>
+              <input class="form-control"type="text" id="val">
+              <br>
+     </div>
+                      </div>
+                     </div>
+          </form>
+          <h2 class="text-center">Wyniki:</h2>
+              
+        <!-- <button onclick = "counter()" id="count-btn" class="btn btn-light">Przelicz</button>-->
+          </div>
+      <div id="wyniki" >
+         
+              <form>
+                  <div class="row">
+              <div class="col-6">
+                <h4>   CaCO3(mg/l)</h4><input id="ca" class="form-control"><br>
+          <h4>    mval/l</h4><input id="mv" class="form-control" ><br></h4>
+               <h4>    mmol/l</h4><input id="mm" class="form-control" ><br></h4>
+                   
+                   
+                  
+              
+              </div>
+                   <div class="col-6">
+                       <h4>°dH(stopień niemiecki)</h4><input id="dh" class="form-control" ><br>
+                  <h4> °e(stopień angielski)</h4><input id="e" class="form-control"><br>
+                   <h4>°f(stopień francuski)</h4><input id="f"class="form-control" ><br>
+                  
+                  
+              
+              </div>
+                   </div>
+              </form>
+              
+         
+          
+          
+          </div>
+          <div id="cmnt" class="text-center">
+          
+          
+          </div>
+       
+        </div>
+       <script src="main.js">
+           
+      </script>
+  </body>
+</html>
